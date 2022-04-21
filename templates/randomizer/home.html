@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <title>Dinner Time</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="{% static 'css/style.css'%}" type="text/css">
+</head>
+<body>
+    <a href="{% url 'choice' %}">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        Идем туда 
+    </a>
+</body>
+</html>

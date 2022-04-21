@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<link rel="stylesheet" href="{% static 'css/choice_style.css'%}" type="text/css">
+<script src="https://api-maps.yandex.ru/2.1/?apikey=ваш API-ключ&lang=ru_RU" type="text/javascript"></script>
+</head>
+<body>
+<div class="container">
+    <h1 class="neonText">
+        Сегодня судьба вас завела в {{restik}}
+        {% if restik == "BurgerKing" %}
+            &#127828;&#127839;
+        {% endif %}
+        
+        {% if restik == "Додо" %}
+            &#127829;
+        {% endif %}
+
+        {% if restik == "Сытопьяно" %}
+            &#127866;&#127865;&#127863;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<li class="gradientList">{{ food1 }}</li>{% endif %}
+            {% if food2 %}<li class="gradientList">{{ food2 }}</li>{% endif %}
+            {% if food3 %}<li class="gradientList">{{ food3 }}</li>{% endif %}
+            </ul>
+        {% endif %}
+
+        {% if restik == "KFC" %}
+            &#127831;&#127839;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<li class="gradientList">{{ food1 }}</li>{% endif %}
+            {% if food2 %}<li class="gradientList">{{ food2 }}</li>{% endif %}
+            {% if food3 %}<li class="gradientList">{{ food3 }}</li>{% endif %}
+            </ul>
+        {% endif %}
+
+        {% if restik == "Отсосать бомжу" %}
+            &#127877;&#127814;
+        {% endif %}
+
+        {% if restik == "Домой" %}
+            &#127968;&#128648;
+        {% endif %}
+
+        {% if restik == "Теремок" %}
+            &#129374;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<li class="gradientList">{{ food1 }}</li>{% endif %}
+            {% if food2 %}<li class="gradientList">{{ food2 }}</li>{% endif %}
+            {% if food3 %}<li class="gradientList">{{ food3 }}</li>{% endif %}
+            </ul>
+        {% endif %}
+    </h1>
+</div>
+</body>
+</html>
