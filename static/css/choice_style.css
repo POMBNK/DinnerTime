@@ -41,6 +41,14 @@ li {
   box-sizing: border-box;
 }
 
+p {
+  counter-increment: index;
+  display: flex;
+  align-items: center;
+  padding: 12px 0;
+  box-sizing: border-box;
+}
+
 
 /* Element counter */
 li::before {

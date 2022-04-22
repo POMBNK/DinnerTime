@@ -11,6 +11,11 @@
         Сегодня судьба вас завела в {{restik}}
         {% if restik == "BurgerKing" %}
             &#127828;&#127839;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<li class="gradientList">{{ food1 }}</li>{% endif %}
+            {% if food2 %}<li class="gradientList">{{ food2 }}</li>{% endif %}
+            {% if food3 %}<li class="gradientList">{{ food3 }}</li>{% endif %}
+            </ul>
         {% endif %}
         
         {% if restik == "Додо" %}
@@ -37,10 +42,16 @@
 
         {% if restik == "Отсосать бомжу" %}
             &#127877;&#127814;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<p class="gradientList">{{ food1 }}  &#127825; </p>{% endif %}
+            </ul>
         {% endif %}
 
         {% if restik == "Домой" %}
             &#127968;&#128648;
+            <ul class="gradientUnorderedList">
+            {% if food1 %}<li class="gradientList">{{ food1 }} &#127808; </li>{% endif %}
+            </ul>
         {% endif %}
 
         {% if restik == "Теремок" %}
